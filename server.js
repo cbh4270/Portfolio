@@ -3,11 +3,12 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
 
+
 var app = express();
 
-var PORT = process.env.PORT || 2211;
+var PORT = process.env.PORT || 2111;
 
-// For serving of static CSS
+
 // app.use(express.static(__dirname + "/app/css"));
 
 // app.use(express.urlencoded({ extended: true }));
@@ -24,8 +25,8 @@ var PORT = process.env.PORT || 2211;
  app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 // API and HTML routes
-require("./app/routing/apiRoutes.js")(app);
-require("./app/routing/htmlRoutes.js")(app);
+// require("./app/routing/apiRoutes.js")(app);
+require("./app/public/routing/htmlRoutes")(app);
 
 app.listen(PORT, function() {
 	console.log("App listening on PORT: " + PORT);
