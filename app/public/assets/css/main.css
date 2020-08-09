@@ -228,7 +228,10 @@ strong, b {
   color: #555555; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #555555; }
+  color: black;
+  font-weight: bold;
+  font-size: x-large;
+}
 
 blockquote {
   border-left-color: rgba(0, 0, 0, 0.25); }
@@ -243,6 +246,7 @@ hr {
 /* Inner */
 .inner {
   margin: 0 auto;
+  color: black;
   width: 75rem;
   max-width: calc(100% - 6rem); }
   @media screen and (max-width: 480px) {
@@ -2063,12 +2067,15 @@ ul.icons {
   color: rgba(255, 255, 255, 0.75);
   background-attachment: fixed;
   background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(../images/insidecomp.webp);
-  background-position: bottom;
+   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  text-align: center;
-  z-index: 1; }
+  text-align: center; 
+  z-index: 1;
+  /* filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(180deg); */
+  filter: saturate(200%) brightness(90%) hue-rotate(290deg);
+ }
   #cta input, #cta select, #cta textarea {
     color: #ffffff; }
   #cta a {
@@ -2850,4 +2857,18 @@ h1 {
 
 .logo {
   font-size: x-large;
+}
+
+.info {
+  color: white;
+}
+
+h2 {
+  color: white;
+  font-size: x-large;
+}
+
+#chill {
+  color: black;
+  font-size: xxx-large;
 }
