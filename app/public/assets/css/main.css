@@ -1815,7 +1815,7 @@ ul.icons {
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  background-image: url("../../images/banner.jpg");
+  background-image: url("../images/insidecomp.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1826,7 +1826,19 @@ ul.icons {
   overflow: hidden;
   position: relative;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  filter: saturate(200%) brightness(90%) hue-rotate(290deg);
+  background-color: black;
+  color: rgba(255, 255, 255, 0.75);
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(../images/insidecomp.webp);
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center; 
+  z-index: 1;
+ }
   #banner input, #banner select, #banner textarea {
     color: #ffffff; }
   #banner a {
